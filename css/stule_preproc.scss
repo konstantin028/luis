@@ -1,0 +1,23 @@
+
+
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-nav > li > a {
+  color: #484c55;
+
+  &:hover {
+    border-bottom: 3px solid black;
+  }
+
+}
+
+.navbar-toggle .icon-bar {
+
+}
+
+.navbar-toggle {
+  border: solid 1px black;
+}

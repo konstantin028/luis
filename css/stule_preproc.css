@@ -1,0 +1,12 @@
+.navbar {
+  margin-bottom: 0; }
+
+.navbar-nav > li > a {
+  color: #484c55; }
+  .navbar-nav > li > a:hover {
+    border-bottom: 3px solid black; }
+
+.navbar-toggle {
+  border: solid 1px black; }
+
+/*# sourceMappingURL=stule_preproc.css.map */
