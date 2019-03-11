@@ -1,3 +1,10 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -48,6 +55,9 @@
       margin-top: 17%;
       color: #4d4d4d;
       margin-left: 0;
+      @include max-screen(767px) {
+        font-size: 21px;
+      }
     }
 
     h2 {
@@ -55,6 +65,9 @@
       font-size: 16px;
       color: #4d4d4d;
       margin-bottom: 32px;
+      @include max-screen(767px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -65,11 +78,17 @@
       margin-right: 20px;
       border: solid 1px #4d4d4d;
       padding: 15px 30px;
+      @include max-screen(767px) {
+        padding: 5px 10px;
+      }
 
       a {
         color: #4d4d4d;
         text-decoration: none;
         font-size: 14px;
+        @include max-screen(767px) {
+          font-size: 12px;
+        }
 
       }
 
@@ -91,6 +110,9 @@
     color: black;
     margin-top: 17%;
     margin-left: 0;
+    @include max-screen(767px) {
+      font-size: 12px;
+    }
 
     span {
       border-bottom: solid 1px #4d4d4d;
@@ -99,12 +121,18 @@
 
   h3 {
     font-size: 36px;
+    @include max-screen(767px) {
+      font-size: 21px;
+    }
 
 
   }
 
   h4 {
     font-size: 36px;
+    @include max-screen(767px) {
+      font-size: 21px;
+    }
 
   }
 
@@ -136,6 +164,9 @@
 
     color: white;
     font-size: 18px;
+    @include max-screen(767px) {
+      font-size: 12px;
+    }
 
     span {
       border-bottom: solid 1px #4d4d4d;
@@ -146,6 +177,9 @@
   h3 {
     color: #4d4d4d;
     font-size: 36px;
+    @include max-screen(767px) {
+      font-size: 21px;
+    }
   }
 
 }
@@ -158,6 +192,9 @@
 
     color: #4d4d4d;
     font-size: 18px;
+    @include max-screen(767px) {
+      font-size: 12px;
+    }
 
     span {
       border-bottom: solid 1px #4d4d4d;
@@ -169,6 +206,9 @@
     color: #4d4d4d;
     font-size: 36px;
     margin-bottom: 1%;
+    @include max-screen(767px) {
+      font-size: 21px;
+    }
   }
 }
 
@@ -184,6 +224,9 @@
 
   h2 {
     font-size: 19px;
+    @include max-screen(767px) {
+      font-size: 12px;
+    }
 
     span {
       border-bottom: solid 1px #4d4d4d;
@@ -195,6 +238,9 @@
     color: #4d4d4d;
     font-size: 38px;
     margin-bottom: 1%;
+    @include max-screen(767px) {
+      font-size: 21px;
+    }
   }
 
   img {
@@ -206,13 +252,15 @@
   }
 
   a {
-    margin-top: 200px;
     font-size: 12px;
     background: white;
     padding: 20px 40px;
     border: solid 1px #4d4d4d;
     text-decoration: none;
     color: black;
+    @include max-screen(767px) {
+      padding: 10px 20px;
+    }
 
   }
 
@@ -224,6 +272,9 @@
 
   h2 {
     font-size: 19px;
+    @include max-screen(767px) {
+      font-size: 12px;
+    }
 
     span {
       border-bottom: solid 1px #4d4d4d;
@@ -235,6 +286,9 @@
     color: #4d4d4d;
     font-size: 38px;
     margin-bottom: 1%;
+    @include max-screen(767px) {
+      font-size: 21px;
+    }
   }
 
   .owl-carousel {
@@ -242,10 +296,16 @@
 
     h3 {
       font-size: 23px;
+      @include max-screen(767px) {
+        font-size: 14px;
+      }
 
       span {
         display: block;
         font-size: 9px;
+        @include max-screen(767px) {
+          font-size: 5px;
+        }
       }
     }
 
@@ -261,6 +321,7 @@
     .owl-carousel .owl-item .img {
       width: 159px;
       height: 159px;
+
 
     }
 
